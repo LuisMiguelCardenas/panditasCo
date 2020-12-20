@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="shortcut icon" href="../images/logop.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Página web de contacto de PanditasCo, tienda de ropa colombiana, especializada en el dormir de los bebés.">
+        <meta name="keywords" content="ROPA, BEBÉS, PIJAMA, BOLSA DE DORMIR, SLEEPIGNBAG, COBIJA, BLANKET, CONTACTO, FORMULARIO, COLOMBIA">
+        <title>
+            PanditasCo/Contacto
+        </title>
+    </head>
+    <body>
+      <!--Cabecera-->
+      <div class="cabecera row">
+        <div class="cabecera-contact col pl-5">
+            <a class="cabecera-contact__link" href="mailto:info@panditasco.com">info@panditasco.com</a>
+            <a class="cabecera-contact__link ml-2" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>+57 312 9876543</a>
+        </div>
+        <div class="cabecera-networks col text-center">
+            <a class="cabecera-networks__link" href="https://www.facebook.com/PanditasCo" target="_blank">Facebook</a>
+            <a class="cabecera-networks__link ml-2" href="https://www.instagram.com/panditasco/?hl=es-la" target="_blank">Instagram</a>
+        </div>
+    </div>    
+    <header id=header class="row d-flex justify-content-between sticky-top">
+        <!--inicio de la barra de navegación-->      
+        <nav class="navbar navbar-expand-sm navbar-light col">
+        <a class="navbar-brand" href="../index.html">
+            <div class="row m-2 ml-5">
+                <img class="navbar__logo animate__animated animate__bounce"id="logo" src="../images/logop.png" alt="logo inicio" width="50px" height="50px"/>
+                        <h2 class="navbar__title animate__animated animate__bounce ml-2">PanditasCo</h2>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end ml-5 text-center" id="navbarNavDropdown">
+            <ul class="navbar-nav animate__animated animate__backInDown" >
+                <li class="navbar__button nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li class="navbar__button nav-item"><a class="nav-link" href="../pages/products.html">Productos</a></li>
+                <li class="navbar__button nav-item"><a class="nav-link" href="../pages/stories.html">Historias</a></li>
+                <li class="navbar__button nav-item"><a class="nav-link" href="../pages/shops.html">Tiendas</a></li>
+                <li class="navbar__button nav-item active"><a class="nav-link" href="../pages/contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!--fin de la barra de navegación-->
+    </header>
+    <!--Contenido-->
+        <main id="mainContact" class="contact__container m-5 text-center">          
+                <h2 class="contacto__title">Contactanos</h2>
+                <p class="contacto__text">Déjanos saber más de ti, a través del siguiente formulario: 
+                </p>
+                <form class="contact__form" name="contacto_form" action="gracias.html" method="POST" enctype="multipart/form-data">
+                    <label for="form_name">Nombre</label>
+                    <input type="text" name="nombre" id="form_name"/>
+                    <br/><br/>
+                    <label for="form_lastname">Apellido</label>
+                    <input type="text" name="nombre" id="form_lastname"/>
+                    <br/><br/>
+                    <label for="form_email" >Email</label>
+                    <input type="email" name="email" id="form_email"/>
+                    <br/><br/>
+                    <label for="form_telefono">Teléfono</label>
+                    <input type="text" name="telefono" id="form_telefono"/>
+                    <br/><br/>
+                    <label for="form_textarea">Mensaje</label>
+                    <textarea name="form_textarea_name" id="form_textarea" rows="8" cols="40"></textarea>
+                    <br/><br/>
+                    <input type="radio" name="gender" id="male" value="hombre">
+                    <label for="male">hombre</label>
+                    <input type="radio" name="gender" id="female" value="mujer">
+                    <label for="female">mujer</label>
+                    <input type="radio" name="gender" id="other" value="otro"> 
+                    <label for="other">otro</label> <br/><br/>
+                    <label for="form_cuidad">Ciudad de recidencia</label>
+                    <select name="ciudad" id="form_ciudad">                    
+                        <option selected="selected" >Ciudad</option>
+                        <option value="1">Bogotá</option>
+                        <option value="2">Medellín</option>
+                        <option value="3">Barranquilla</option>
+                        <option value="4">Cali</option>
+                        <option value="5">Bucaramanga</option>
+                        <option value="6">Cartagena</option> 
+                    </select><br/><br/>
+                    <input type="checkbox" name="checkbox_1" id=checkbox1 value="conditions" required>
+                    <label for="checkbox_1">Acepto términos y condiciones</label><br/><br/>
+                    <label for="myfile_input">Adjuntar un documento</label>
+                    <input type="file" name="myfile_input_name" id="myfile_input"><br/><br/>
+                    <input type="submit" value="Enviar"/>
+                    <input type="reset" value="Limpiar"/>
+                </form>
+                <p class="contacto__text mt-5">Escribenos y siguenos en nuestras redes</p>
+                <div class="red container d-flex justify-content-center">
+                    <div class="red__facebook"><a class="red__facebook--link" href="https://www.facebook.com/PanditasCo" target="_blank">f</a></div>
+                    <div class="red__instagram"><a class="red__instagram--link" href="https://www.instagram.com/panditasco/?hl=es-la" target="_blank">i</a></div>
+                    <div class="red__whatsapp"><a class="red__whatsapp--link" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>w</a></div>
+                    <div class="red__mail"><a class="red__mail--link" href="mailto:info@panditasco.com">m</a></div>
+                </div>      
+        </main>
+       <!--pie de página-->
+       <footer class="row">
+        <div class="shops col-md m-4 d-none d-sm-none d-md-block">
+            <h3 class="shops__title text-center ">Tiendas</h3>
+            <div class="shops__container row d-flex justify-content-center">
+                <ul>
+                    <li><a class="shops__link" href="../pages/shops.html#shop1">Bogotá</a></li>
+                    <li><a class="shops__link" href="../pages/shops.html#shop2">Barranquilla</a></li>
+                    <li><a class="shops__link" href="../pages/shops.html#shop3">Bucaramanga</a></li>
+                    <li><a class="shops__link" href="../pages/shops.html#shop4">Medellín</a></li>
+                    <li><a class="shops__link" href="../pages/shops.html#shop5">Cali</a></li>
+                    <li><a class="shops__link" href="../pages/shops.html#shop6">Cartagena</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact col-md m-4">
+            <h3 class="contact__title text-center mr-5">Contacto</h3>
+            <div class="contact__container row d-flex justify-content-center">
+                <ul>
+                    <li><a class="contact__link" href="mailto:info@panditasco.com">info@panditasco.com</a></li>
+                    <li><a class="contact__link" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>+57 312 9876543</a></li>
+                    <li><a class="contact__link" href="https://www.facebook.com/PanditasCo" target="_blank">Facebook</a></li>
+                    <li><a class="contact__link" href="https://www.instagram.com/panditasco/?hl=es-la" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-footer col-md m-4 d-none d-sm-none d-md-block">
+            <h3 class="menu-footer__title text-center">Menu</h3>
+            <div class="menu-footer__container row d-flex justify-content-center">    
+                <ul>
+                    <li><a class="menu-footer__link" href="../index.html">Inicio</a></li>
+                    <li><a class="menu-footer__link" href="../pages/products.html">Productos</a></li>
+                    <li><a class="menu-footer__link" href="../pages/stories.html">Historias</a></li>
+                    <li><a class="menu-footer__link" href="../pages/shops.html">Tiendas</a></li>
+                    <li><a class="menu-footer__link" href="../pages/contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+        <script type="text/script" src="js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+    </body>
+</html>

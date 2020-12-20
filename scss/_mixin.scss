@@ -1,0 +1,34 @@
+@mixin button {
+    background-color: $colorOne;
+    border: 2px solid $colorTwo;
+    border-radius: 40px;
+    color: $colorTwo;
+    height: 50px;
+    margin-top: 5px;
+    padding: 10px;
+    text-decoration: none;
+    width: 150px;
+    &:hover{
+        background-color: $colorTwo;
+        border: 2px solid $colorTwo;
+        color: $colorOne;
+        transition: 0.5s;
+    }
+}
+
+.button-blanket__link{
+    @include button
+}
+
+.button-pijama__link{
+    @include button
+}
+
+.button-sleeping-bag__link{
+    @include button
+}
+
+.mian-products__text--link{
+    @include button;
+    border-radius: 5px;
+}

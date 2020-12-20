@@ -1,0 +1,235 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color:$colorOne ;
+}
+
+a:hover{
+    text-decoration: none;
+    color: $colorThree;
+}
+
+//seccion de productos//
+
+.mian-products__title{
+    @extend .welcome__title;
+}
+
+.mian-products__text{
+    @extend .welcome__text;
+    color: $colorTwo;
+    margin: 20px;
+}
+
+#sleepingBag{
+    color: $colorTwo;
+    text-align: center;
+}
+#cobija{
+    @extend #sleepingBag;
+}
+#pijamas{
+    @extend #sleepingBag;
+}
+
+.container__sleepingBag{
+    background: $colorOne;
+}
+.container__blanket{
+    background: $colorOne;
+}
+.container__pijamas{
+    background: $colorOne;
+}    
+
+.sleepingBag__title{
+    font-size: $sizeTwo;
+    text-decoration: underline;
+    border-bottom: 2px solid $colorTwo;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 170px;
+    margin-top: -170px;
+}
+
+.blanket__title{
+    @extend .sleepingBag__title;
+}
+
+.pijamas__title{
+    @extend .sleepingBag__title
+}
+
+.galery{
+    font-size: $sizeOne;
+    font-family: $fontOne;
+    width: 300px;
+    margin: 40px;
+    border-radius: 30px;
+    &:hover{
+        background-color: $colorThree;
+        transform: scale(1.02,1.02); 
+        transition: 0.7s;       
+    }
+
+    .galery__text{
+        color: $colorTwo;
+    }
+    
+    .galery__img{
+        width: 200px;
+        height: 250px;
+    }
+}
+
+//Página de historias
+
+#mainStories{
+    background: linear-gradient($colorFour, $colorOne);
+}
+.mainStories__title{
+    font-size: $sizeTwo;
+    text-decoration: underline;
+    border-bottom: 2px solid $colorTwo;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.mainStories__text{
+    @extend .mian-products__text;
+    padding: 10px;
+}
+
+.storyOne__title{
+    font-size: $sizeTwo;
+    font-family: $fontTwo;
+    border-bottom: 2px solid $colorTwo;
+}
+
+.storyOne__text{
+    font-size: $sizeOne;
+    font-family: $fontThree;
+}
+
+.storyOne__img{
+    width: 450px;
+    height: 350px;
+}
+.storyTwo__title{
+    @extend .storyOne__title;
+}
+
+.storyTwo__text{
+    @extend .storyOne__text;
+}
+
+.yourStories__title{
+    font-size: $sizeThree;
+    margin-bottom: 20px;
+}
+
+.yourStories__text{
+    @extend .storyOne__text;
+    margin-bottom: 50px;
+    .yourStories__link{
+        color: $colorTwo;
+        &:hover{
+            color:$colorThree;
+        }
+    }
+}
+
+//Página de tiendas//
+
+.mainShops__title{
+    @extend .mainStories__title;
+}
+
+.mainShops__text{
+    @extend .mainStories__text;
+}
+
+.shop1__title,
+.shop2__title,
+.shop3__title,
+.shop4__title,
+.shop5__title,
+.shop6__title{
+    font-size: $sizeTwo;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 100px;
+    margin-top: -100px;
+}
+
+//Página de contacto//
+
+#mainContact{
+    font-size: $sizeOne;
+    font-family: $fontOne;
+}
+
+.contacto__title{
+    @extend .sleepingBag__title
+}
+
+$redes: "facebook", "whatsapp", "instagram", "mail";
+@each $redes in $redes {
+    .red__#{$redes} {
+      background-image: url("../images/iconos/#{$redes}.png")
+    }
+}
+
+.red__facebook {
+    height: 30px;
+    width: 30px;
+    background-size:30px 30px;
+    margin: 10px;
+}
+
+.red__instagram {
+    height: 30px;
+    width: 30px;
+    background-size:30px 30px;
+    margin: 10px;
+}
+.red__whatsapp {
+    height: 30px;
+    width: 30px;
+    background-size:30px 30px;
+    margin: 10px;
+   
+}
+.red__mail {
+    height: 30px;
+    width: 30px;
+    background-size:30px 30px ;
+    margin: 10px; 
+}
+.red__mail--link{
+    color: rgba(128, 255, 0, 0);
+    &:hover{
+        color: rgba(128, 255, 0, 0) ;
+    }
+}
+
+.red__facebook--link,
+.red__whatsapp--link,
+.red__instagram--link{
+    @extend .red__mail--link;
+}
+
+//Página de gracias// 
+
+.thanks__title{
+    font-size: $sizeTwo;
+    margin: 60px;
+}
+.thanks__text{
+    font-size: $sizeOne;
+    margin: 50px;
+}
+

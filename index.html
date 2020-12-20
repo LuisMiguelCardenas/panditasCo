@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="images/logop.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="PanditasCo es la tienda de ropa, colombiana, especializada en el buen dormir de los bebés. Venta de pijamas, bolsas de dormir y cobijas para bebés, para que tu bebé descanse cómodo y seguro.">
+        <meta name="keywords" content="ROPA, BEBÉS, PIJAMA, BOLSA DE DORMIR, SLEEPIGNBAG, COBIJA, BLANKET, CREACIÓN, COLOMBIA">
+        <title>PanditasCo</title>
+    </head>
+    <body>
+        <div class="container-flex">
+            <!--Cabecera-->
+            <div class="cabecera row">
+                <div class="cabecera-contact col pl-5">
+                    <a class="cabecera-contact__link" href="mailto:info@panditasco.com">info@panditasco.com</a>
+                    <a class="cabecera-contact__link ml-2" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>+57 312 9876543</a>
+                </div>
+                <div class="cabecera-networks col text-center">
+                    <a class="cabecera-networks__link" href="https://www.facebook.com/PanditasCo" target="_blank">Facebook</a>
+                    <a class="cabecera-networks__link ml-2" href="https://www.instagram.com/panditasco/?hl=es-la" target="_blank">Instagram</a>
+                </div>
+            </div>    
+            <header id=header class="row d-flex justify-content-between sticky-top">
+                <!--inicio de la barra de navegación-->      
+                <nav class="navbar navbar-expand-sm navbar-light col">
+                <a class="navbar-brand" href="index.html">
+                    <div class="row m-2 ml-5">
+                        <img class="navbar__logo animate__animated animate__bounce"id="logo" src="images/logop.png" alt="logo inicio" width="50px" height="50px"/>
+                        <h2 class="navbar__title animate__animated animate__bounce ml-2">PanditasCo</h2>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end ml-5 text-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav animate__animated animate__backInDown" >
+                        <li class="navbar__button nav-item active"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="navbar__button nav-item"><a class="nav-link" href="pages/products.html">Productos</a></li>
+                        <li class="navbar__button nav-item"><a class="nav-link" href="pages/stories.html">Historias</a></li>
+                        <li class="navbar__button nav-item"><a class="nav-link" href="pages/shops.html">Tiendas</a></li>
+                        <li class="navbar__button nav-item"><a class="nav-link" href="pages/contact.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <!--fin de la barra de navegación-->
+            </header>
+            <!--inicio del carrusel-->
+            <div class="container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100 imgCarrusel" src="images/slider/slider-1.jpg" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Lorem ipsum dolor sit.</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit quas accusamus hic in a cum porro quam dicta consequatur nulla.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100 imgCarrusel" src="images/slider/slider-2.jpeg" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Lorem ipsum dolor sit.</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit quas accusamus hic in a cum porro quam dicta consequatur nulla.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100 imgCarrusel" src="images/slider/slider-3.jpg" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Lorem ipsum dolor sit.</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit quas accusamus hic in a cum porro quam dicta consequatur nulla.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+            <!--fin del carrusel-->
+            <!--Contenido-->
+            <div class="welcome container text-center">
+                <h1 class="welcome__title col">Bienvenido a PanditasCo</h1>
+                <p class="welcome__text col">Aquí encontrarás los mejores artículos y consejos para el buen descanso de tu bebé. Te invitamos a que explores la varierdad de productos y de historias relativas a cómo es tener un bebé en casa. ¡Anímate y comparte tu historia con nosotros!</p>
+            </div> 
+            <main class="main-index container d-flex justify-content-center">
+                <div class="col-10  m-3 text-center">
+                    <h2 class="main__title m-3">Nuestros productos</h2>
+                    <div class="main__container row">
+                        <div class="sleeping-bag col-md">
+                            <img class="sleeping-bag__img col" src="images/iconSleepingbag.jpeg" alt="pandi bolsa de dormir"/>
+                            <a type="button" class="button-sleeping-bag__link btn btn-dark mb-5 col" href="pages/products.html#sleepingBag">Pandi Bolsitas</a>
+                        </div>
+                        <div class="blanket col">
+                            <img class="blanket__img col" src="images/iconBlanket.png" alt="Pandi-cobijas"/>
+                            <a type="button" class="button-blanket__link btn btn-dark mb-5 col" href="pages/products.html#cobija">Pandi Cobijas</a>
+                        </div>
+                        <div class="pijama col">
+                            <img class="pijama__img col" src="images/iconPijama.png" alt="pandi pijamas"/>
+                            <a type="button" class="button-pijama__link btn btn-dark mb-3 col" href="pages/products.html#pijamas">Pandi Pijamas</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div class="sidebar container">
+                <div class="row">
+                    <div class="cardOne col-md text-justify m-3">
+                        <h2 class="cardOne__title row text-center">Creamos con amor...</h2>
+                        <img class="cardOne__img" src="images/creando.jpeg" alt="creando">
+                        <p class="cardOne__text text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus quisquam debitis eaque harum et, ullam unde omnis. Labore cumque quidem, repudiandae itaque commodi error, necessitatibus, fugiat exercitationem eaque quae ab.</p>
+                    </div>
+                    <div class=" cardTwo col-md text-justify m-3 d-none d-sm-none d-md-block">
+                        <h2 class="cardTwo__title row text-center">Mi bebé al dormir</h2>
+                        <img class="cardTwo__img"src="images/bebedurmiendo.jpeg" alt="creando">
+                        <p class="cardTwo__text text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus quisquam debitis eaque harum et, ullam unde omnis. Labore cumque quidem, repudiandae itaque commodi error, necessitatibus, fugiat exercitationem eaque quae ab.</p>
+                    </div>
+                </div>
+            </div>
+            <!--pie de página-->
+            <footer class="row">
+                <div class="shops col-md m-4 d-none d-sm-none d-md-block">
+                    <h3 class="shops__title text-center ">Tiendas</h3>
+                    <div class="shops__container row d-flex justify-content-center">
+                        <ul>
+                            <li><a class="shops__link" href="pages/shops.html#shop1">Bogotá</a></li>
+                            <li><a class="shops__link" href="pages/shops.html#shop2">Barranquilla</a></li>
+                            <li><a class="shops__link" href="pages/shops.html#shop3">Bucaramanga</a></li>
+                            <li><a class="shops__link" href="pages/shops.html#shop4">Medellín</a></li>
+                            <li><a class="shops__link" href="pages/shops.html#shop5">Cali</a></li>
+                            <li><a class="shops__link" href="pages/shops.html#shop6">Cartagena</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact col-md m-4">
+                    <h3 class="contact__title text-center mr-5">Contacto</h3>
+                    <div class="contact__container row d-flex justify-content-center">
+                        <ul>
+                            <li><a class="contact__link" href="mailto:info@panditasco.com">info@panditasco.com</a></li>
+                            <li><a class="contact__link" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>+57 312 9876543</a></li>
+                            <li><a class="contact__link" href="https://www.facebook.com/PanditasCo" target="_blank">Facebook</a></li>
+                            <li><a class="contact__link" href="https://www.instagram.com/panditasco/?hl=es-la" target="_blank">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-footer col-md m-4 d-none d-sm-none d-md-block">
+                    <h3 class="menu-footer__title text-center">Menu</h3>
+                    <div class="menu-footer__container row d-flex justify-content-center">    
+                        <ul>
+                            <li><a class="menu-footer__link" href="index.html">Inicio</a></li>
+                            <li><a class="menu-footer__link" href="pages/products.html">Productos</a></li>
+                            <li><a class="menu-footer__link" href="pages/stories.html">Historias</a></li>
+                            <li><a class="menu-footer__link" href="pages/shops.html">Tiendas</a></li>
+                            <li><a class="menu-footer__link" href="pages/contact.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script type="text/script" src="js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>   
+    </body>
+</html>
+

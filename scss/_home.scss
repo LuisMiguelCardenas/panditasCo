@@ -1,0 +1,71 @@
+//Binevenida
+
+.welcome__title{
+    color: $colorTwo;
+    font-size: $sizeFour;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.welcome__text{
+    color: $colorSix;
+    font-size: $sizeThree;
+    margin-bottom: 100px;    
+}
+
+//Mian 
+
+.main-index{
+    .main__title{
+        font-size: $sizeTwo;
+        text-decoration: underline;
+        font-family: $fontTwo;
+    }
+}
+
+.sleeping-bag__img{
+    width: 130px;
+    height: 120px;
+    margin: 20px;
+}
+
+.blanket__img{
+    @extend .sleeping-bag__img;
+}
+.pijama__img{
+    @extend .sleeping-bag__img;
+}
+
+
+
+//cards 
+.cardOne{
+        background-color: $colorTwo;
+        .cardOne__title{
+            color: $colorOne;
+            font-family: $fontOne;
+            font-size: $sizeThree;
+            margin: 20px;
+            text-decoration: underline;
+        }
+        .cardeOne__text{
+            font-size: $sizeOne;
+            font-family: $fontThree;
+        }
+    }
+
+    .cardTwo{
+        background-color: $colorTwo;
+        .cardTwo__title{
+            color: $colorOne;
+            font-family: $fontOne;
+            font-size: $sizeThree;
+            margin: 20px;
+            text-decoration: underline;
+        }
+        .cardeTwo__text{
+            font-size: $sizeOne;
+            font-family: $fontThree;
+        }
+    }
+

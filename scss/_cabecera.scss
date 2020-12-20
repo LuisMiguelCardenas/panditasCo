@@ -1,0 +1,21 @@
+.cabecera{
+    background-color: $colorTwo;
+    .cabecera-contact{
+        .cabecera-contact__link{
+            color: $colorOne;
+        }
+        .cabecera-contact__link:hover{
+            text-decoration: none;
+            color: $colorThree;
+        }
+    }
+    .cabecera-networks{
+        .cabecera-networks__link{
+            color: $colorOne;
+        }
+        .cabecera-networks__link:hover{
+            text-decoration: none;
+            color: $colorThree;
+        }
+    }
+}
