@@ -69,11 +69,6 @@ a:hover{
     width: 300px;
     margin: 40px;
     border-radius: 30px;
-    &:hover{
-        background-color: $colorThree;
-        transform: scale(1.02,1.02); 
-        transition: 0.7s;       
-    }
 
     .galery__text{
         color: $colorTwo;
@@ -82,14 +77,16 @@ a:hover{
     .galery__img{
         width: 200px;
         height: 250px;
+        &:hover{
+            border: rgba(133, 133, 133, 0.384) 5px solid;
+            transform: scale(1.05,1.05);
+            transition: 0.5s;
+        }
     }
 }
 
 //Página de historias
 
-#mainStories{
-    background: linear-gradient($colorFour, $colorOne);
-}
 .mainStories__title{
     font-size: $sizeTwo;
     text-decoration: underline;
@@ -103,6 +100,20 @@ a:hover{
     padding: 10px;
 }
 
+.mainStories__link{
+    .mainStories__text{
+    &:hover{
+        color: $colorThree;
+    }
+}
+}
+
+.storyOne{
+    background: linear-gradient($colorFour, $colorOne);
+}
+.storyTwo{
+    background: linear-gradient($colorOne, $colorFour);
+}
 .storyOne__title{
     font-size: $sizeTwo;
     font-family: $fontTwo;
@@ -115,8 +126,8 @@ a:hover{
 }
 
 .storyOne__img{
-    width: 450px;
-    height: 350px;
+    width: 100%;
+    height: auto;
 }
 .storyTwo__title{
     @extend .storyOne__title;
@@ -125,7 +136,15 @@ a:hover{
 .storyTwo__text{
     @extend .storyOne__text;
 }
+.storyTwo__img{
+    width: 100%;
+    height: auto;
+}
 
+.yourStories{
+    border: solid 2px $colorTwo;
+
+}
 .yourStories__title{
     font-size: $sizeThree;
     margin-bottom: 20px;
@@ -159,12 +178,16 @@ a:hover{
 .shop5__title,
 .shop6__title{
     font-size: $sizeTwo;
-    margin-bottom: 20px;
     padding-bottom: 20px;
-    padding-top: 100px;
-    margin-top: -100px;
+    padding-top: 170px;
+    margin-top: -170px;
 }
 
+.shop__text{
+    font-size: $sizeOne;
+    color: $colorTwo;
+    margin: 20px;
+}
 //Página de contacto//
 
 #mainContact{

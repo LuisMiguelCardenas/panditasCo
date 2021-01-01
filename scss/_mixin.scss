@@ -12,6 +12,7 @@
         background-color: $colorTwo;
         border: 2px solid $colorTwo;
         color: $colorOne;
+        text-decoration: none;
         transition: 0.5s;
     }
 }
@@ -31,4 +32,19 @@
 .mian-products__text--link{
     @include button;
     border-radius: 5px;
+}
+
+.buy--button{
+    @include button;
+    background-color: $colorThree;
+    &:hover{
+        background-color: $colorSeven;
+        color: $colorOne;
+        border: none;
+    }
+   
+}
+.location--button{
+    @include button;
+    
 }

@@ -5,6 +5,9 @@
         <link rel="stylesheet" href="../css/style.css">
         <link rel="shortcut icon" href="../images/logop.png"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!--link lightbox-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="description" content="Página web de la ubicación de las tiendas de PanditasCo. Venta de pijamas, bolsas de dormir y cobijas para bebés">
         <meta name="keywords" content="TIENDA, ROPA, BEBÉS, PIJAMA, BOLSA DE DORMIR, SLEEPIGNBAG, COBIJA, BLANKET, COLOMBIA">
@@ -12,38 +15,49 @@
             PanditasCo/Tiendas
         </title>
     </head>
-    <body>
+    <body class="container">
          <!--Cabecera-->
-         <div class="cabecera row">
-            <div class="cabecera-contact col pl-5">
-                <a class="cabecera-contact__link" href="mailto:info@panditasco.com">info@panditasco.com</a>
-                <a class="cabecera-contact__link ml-2" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>+57 312 9876543</a>
-            </div>
-            <div class="cabecera-networks col text-center">
-                <a class="cabecera-networks__link" href="https://www.facebook.com/PanditasCo" target="_blank">Facebook</a>
-                <a class="cabecera-networks__link ml-2" href="https://www.instagram.com/panditasco/?hl=es-la" target="_blank">Instagram</a>
-            </div>
-        </div>    
-        <header id=header class="row d-flex justify-content-between sticky-top">
-            <!--inicio de la barra de navegación-->      
-            <nav class="navbar navbar-expand-sm navbar-light col">
-            <a class="navbar-brand" href="../index.html">
-                <div class="row m-2 ml-5">
-                    <img class="navbar__logo animate__animated animate__bounce"id="logo" src="../images/logop.png" alt="logo inicio" width="50px" height="50px"/>
-                    <h2 class="navbar__title animate__animated animate__bounce ml-2">PanditasCo</h2>
-                </div>
+        <div class="cabecera bg-dark row d-flex justify-content-around">
+            <a class="cabecera__link row no-gutters" href="mailto:info@panditasco.com">
+                <i class="fas fa-envelope mt-1"></i>
+                <p class="cabecera__text ml-2 d-none d-sm-block d-md-block">info@panditasco.com</p>
+            </a>               
+            <a class="cabecera__link row no-gutters" href="mailto:info@panditasco.com">
+                <i class="fab fa-whatsapp mt-1"></i> 
+                <p class="cabecera__text ml-2 d-none d-sm-block d-md-block">+57 312 9876543</p>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end ml-5 text-center" id="navbarNavDropdown">
-                <ul class="navbar-nav animate__animated animate__backInDown" >
-                    <li class="navbar__button nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li class="navbar__button nav-item"><a class="nav-link" href="../pages/products.html">Productos</a></li>
-                    <li class="navbar__button nav-item"><a class="nav-link" href="../pages/stories.html">Historias</a></li>
-                    <li class="navbar__button nav-item active"><a class="nav-link" href="../pages/shops.html">Tiendas</a></li>
-                    <li class="navbar__button nav-item"><a class="nav-link" href="../pages/contact.html">Contacto</a></li>
-                </ul>
+            <a class="cabecera__link row no-gutters" href="mailto:info@panditasco.com">
+                <i class="fab fa-facebook-square mt-1"></i>
+                <p class="cabecera__text ml-2 d-none d-sm-none d-md-block">Facebook</p>
+            </a>               
+            <a class="cabecera__link row no-gutters" href="mailto:info@panditasco.com">
+                <i class="fab fa-instagram mt-1"></i>
+                <p class="cabecera__text ml-2 d-none d-sm-none d-md-block">Instagram</p>
+            </a>               
+        </div>     
+        <header id=header class="row text-center sticky-top">
+            <!--inicio de la barra de navegación-->      
+            <nav class="navbar navbar-expand-md navbar-light col">
+                <a class="navbar-brand" href="../index.html">
+                    <div class="container text-center d-flex justify-content-center">
+                        <img class="navbar__logo animate__animated animate__bounce" id="logo" src="../images/logop.png" alt="logo inicio" width="50px" height="50px"/>
+                        <h2 class="navbar__title animate__animated animate__bounce">PanditasCo</h2>
+                    </div>
+                </a>
+                <div class="col">
+                    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end ml-5 text-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav animate__animated animate__backInDown" >
+                        <li class="navbar__button nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="navbar__button nav-item"><a class="nav-link" href="../pages/products.html">Productos</a></li>
+                        <li class="navbar__button nav-item"><a class="nav-link" href="../pages/stories.html">Historias</a></li>
+                        <li class="navbar__button nav-item active"><a class="nav-link" href="../pages/shops.html">Tiendas</a></li>
+                        <li class="navbar__button nav-item"><a class="nav-link" href="../pages/contact.html">Contacto</a></li>
+                    </ul>
+                </div>
             </nav>
             <!--fin de la barra de navegación-->
         </header>
@@ -51,66 +65,85 @@
         <main id="mainShops" class="container">
             <h1 class="mainShops__title text-center">Nuestros Productos</h1>
             <p class="mainShops__text text-center">Busca tu tienda Panditas más cercana y danos el gusto de atenderte.</p>
-            <div class="mainShop__container row">
-                <div class="shop1__container text-center col-12 col-md-6 col-sm-12">
-                    <h2 id="shop1" class="shop1__title">Pandita Bogotá</h2>
-                    <img class="shop1__img" src="../images/shop.jpeg" alt="Imagen tienda">
-                    <p class="shop1__text">Ubicacion de la tienda</p>
+            <div class="mainShop__container row justify-content-center">
+                <div class="shop1__container row justify-content-center col-12 col-sm-10 col-md-6">
+                    <h2 id="shop1" class="shop1__title col-10 text-center">Pandita Bogotá</h2>
+                    <a class="location--button col-10 col-sm-8 col-md-6 mb-2 d-block d-sm-block d-md-none" href="https://goo.gl/maps/vireVAyJjaVDrk5C6" target=blank>
+                        <p class="text-center"><i class="fas fa-map-marker-alt"></i> Ver ubicación</p>
+                        </a>
+                    <img class="shop1__img col-10 col-sm-8" src="../images/shop.jpeg" alt="Imagen tienda Bogotá">
+                    <p class="shop__text text-center col-8">Centro Comencial Titan plaza Local 142</p>
+                    <iframe class="col-md-8 d-none d-sm-none d-md-block mb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.4322829563143!2d-74.08837668523778!3d4.69470799658999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b25144634c9%3A0xaa39a3ad6b78b4cb!2sCentro%20Comercial%20Tit%C3%A1n%20Plaza!5e0!3m2!1ses-419!2sco!4v1609365144838!5m2!1ses-419!2sco" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
-                <div class="shop2__container text-center col-12 col-md-6 col-sm-12">
-                    <h2 id="shop2" class="shop2__title">Pandita Barranquilla</h2>
-                    <img class="shop2__img" src="../images/shop.jpeg" alt="Imagen tienda">
-                    <p class="shop2__text">Ubicacion de la tienda</p>
-                </div>
-                <div class="shop3__container text-center col-12 col-md-6 col-sm-12">
-                    <h2 id="shop3" class="shop3__title">Pandita Bucaramanga</h2>
-                    <img class="shop3__img" src="../images/shop.jpeg" alt="Imagen tienda">
-                    <p class="shop3__text">Ubicacion de la tienda</p>
-                </div>
-                <div class="shop4__container text-center col-12 col-md-6 col-sm-12">
-                    <h2 id="shop4" class="shop4__title">Pandita Medellín</h2>
-                    <img class="shop4__img" src="../images/shop.jpeg" alt="Imagen tienda">
-                    <p class="shop4__text">Ubicacion de la tienda</p>
-                </div>
-                <div class="shop5__container text-center col-12 col-md-6 col-sm-12">
-                    <h2 id="shop5" class="shop5__title">Pandita Cali</h2>
-                    <img class="shop5__img" src="../images/shop.jpeg" alt="Imagen tienda">
-                    <p class="shop5__text">Ubicacion de la tienda</p>
-                </div>
-                <div class="shop6__container text-center col-12 col-md-6 col-sm-12">
-                    <h2 id="shop6" class="shop6__title">Pandita Cartagena</h2>
-                    <img class="shop6__img" src="../images/shop.jpeg" alt="Imagen tienda">
-                    <p class="shop6__text">Ubicacion de la tienda</p>
-                </div>
+                <div class="shop2__container row justify-content-center col-12 col-sm-10 col-md-6">
+                    <h2 id="shop2" class="shop2__title col-12 text-center">Pandita Barranquilla</h2>
+                    <a class="location--button col-10 col-sm-8 col-md-6 mb-2 d-block d-sm-block d-md-none" href="https://goo.gl/maps/DrkDUzqwoGduq7Fm9" target=blank>
+                        <p class="text-center"><i class="fas fa-map-marker-alt"></i> Ver ubicación</p>
+                        </a>
+                    <img class="shop2__img col-10 col-sm-8" src="../images/shop.jpeg" alt="Imagen tienda Bogotá">
+                    <p class="shop__text text-center col-8">Centro Comencial Buena Vista Local 218</p>
+                    <iframe class="col-md-8 d-none d-sm-none d-md-block mb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.3237058718287!2d-74.8300284355982!3d11.014321592160378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42c4d4ad7ec73%3A0x9ab6eda3d5142548!2sCentro%20Comercial%20Buenavista!5e0!3m2!1ses-419!2sco!4v1609370581310!5m2!1ses-419!2sco" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                </div>
+                <div class="shop3__container row justify-content-center col-12 col-sm-10 col-md-6">
+                    <h2 id="shop3" class="shop3__title col-10 text-center">Pandita Bucaramanga</h2>
+                    <a class="location--button col-10 col-sm-8 col-md-6 mb-2 d-block d-sm-block d-md-none" href="https://goo.gl/maps/GoiqaH4UFnuQoVsP8" target=blank>
+                        <p class="text-center"><i class="fas fa-map-marker-alt"></i> Ver ubicación</p>
+                        </a>
+                    <img class="shop3__img col-10 col-sm-8" src="../images/shop.jpeg" alt="Imagen tienda Bogotá">
+                    <p class="shop__text text-center col-8">Centro Comencial Cacique Local 174</p>
+                    <iframe class="col-md-8 d-none d-sm-none d-md-block mb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.236383681958!2d-73.10917098577406!3d7.098577994873639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683fee85f6d4a9%3A0xc9f107ff9d5526ff!2sCentro%20Comercial%20Cacique!5e0!3m2!1ses-419!2sco!4v1609370741709!5m2!1ses-419!2sco" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                </div>
+                <div class="shop4__container row justify-content-center col-12 col-sm-10 col-md-6">
+                    <h2 id="shop4" class="shop4__title col-12 text-center">Pandita Medellín</h2>
+                    <a class="location--button col-10 col-sm-8 col-md-6 mb-2 d-block d-sm-block d-md-none" href="https://goo.gl/maps/XJU4DrQdd75o3ie89" target=blank>
+                        <p class="text-center"><i class="fas fa-map-marker-alt"></i> Ver ubicación</p>
+                        </a>
+                    <img class="shop4__img col-10 col-sm-8" src="../images/shop.jpeg" alt="Imagen tienda Bogotá">
+                    <p class="shop__text text-center col-8">Centro Comencial Santa Fé Local 342</p>
+                    <iframe class="col-md-8 d-none d-sm-none d-md-block mb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.508161932518!2d-75.57601898578008!3d6.196484295514147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4682881ca00127%3A0xf96762aa39ea4209!2sCentro%20Comercial%20Santaf%C3%A9!5e0!3m2!1ses-419!2sco!4v1609370867541!5m2!1ses-419!2sco" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                </div>
+                <div class="shop5__container row justify-content-center col-12 col-sm-10 col-md-6">
+                    <h2 id="shop5" class="shop5__title col-10 text-center">Pandita Cali</h2>
+                    <a class="location--button col-10 col-sm-8 col-md-6 mb-2 d-block d-sm-block d-md-none" href="https://goo.gl/maps/KyoJzHACMyDpVo236" target=blank>
+                        <p class="text-center"><i class="fas fa-map-marker-alt"></i> Ver ubicación</p>
+                        </a>
+                    <img class="shop5__img col-10 col-sm-8" src="../images/shop.jpeg" alt="Imagen tienda Bogotá">
+                    <p class="shop__text text-center col-8">Centro Comencial Centenario Local 202</p>
+                    <iframe class="col-md-8 d-none d-sm-none d-md-block mb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.5703771611684!2d-76.53939728579307!3d3.4540945974859723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a66ffd0acf01%3A0x1fe1b69b3f9dcb5!2sCentro%20Comercial%20Centenario!5e0!3m2!1ses-419!2sco!4v1609371034381!5m2!1ses-419!2sco" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                </div>
+                <div class="shop6__container row justify-content-center col-12 col-sm-10 col-md-6">
+                    <h2 id="shop6" class="shop6__title col-12 text-center">Pandita Cartagena</h2>
+                    <a class="location--button col-10 col-sm-8 col-md-6 mb-2 d-block d-sm-block d-md-none" href="https://goo.gl/maps/wg8PPhJfwXbkr4WJA" target=blank>
+                        <p class="text-center"><i class="fas fa-map-marker-alt"></i> Ver ubicación</p>
+                        </a>
+                    <img class="shop6__img col-10 col-sm-8" src="../images/shop.jpeg" alt="Imagen tienda Bogotá">
+                    <p class="shop__text text-center col-8">Centro Comencial Nao Cartagena Local 102</p>
+                    <iframe class="col-md-8 d-none d-sm-none d-md-block mb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.268400179911!2d-75.5612624857457!3d10.400244492577432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef62f3d974185f5%3A0xf5ff4ec606a9557!2sCentro%20Comercial%20Nao%20cartagena!5e0!3m2!1ses-419!2sco!4v1609371165197!5m2!1ses-419!2sco" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                </div>
             </div>
         </main>
         <!--pie de página-->
-        <footer class="row">
-            <div class="shops col-md m-4 d-none d-sm-none d-md-block">
+        <footer class="row p-4">
+            <div class="shops col d-none d-sm-block d-md-block">
                 <h3 class="shops__title text-center ">Tiendas</h3>
                 <div class="shops__container row d-flex justify-content-center">
                     <ul>
-                        <li><a class="shops__link" href="../pages/shops.html#shop1">Bogotá</a></li>
-                        <li><a class="shops__link" href="../pages/shops.html#shop2">Barranquilla</a></li>
-                        <li><a class="shops__link" href="../pages/shops.html#shop3">Bucaramanga</a></li>
-                        <li><a class="shops__link" href="../pages/shops.html#shop4">Medellín</a></li>
-                        <li><a class="shops__link" href="../pages/shops.html#shop5">Cali</a></li>
-                        <li><a class="shops__link" href="../pages/shops.html#shop6">Cartagena</a></li>
+                        <li><a class="shops__link" href="../pages/shops.html#shop1"><i class="fas fa-map-marker-alt"></i> Bogotá</a></li>
+                        <li><a class="shops__link" href="../pages/shops.html#shop2"><i class="fas fa-map-marker-alt"></i> Barranquilla</a></li>
+                        <li><a class="shops__link" href="../pages/shops.html#shop3"><i class="fas fa-map-marker-alt"></i> Bucaramanga</a></li>
+                        <li><a class="shops__link" href="../pages/shops.html#shop4"><i class="fas fa-map-marker-alt"></i> Medellín</a></li>
+                        <li><a class="shops__link" href="../pages/shops.html#shop5"><i class="fas fa-map-marker-alt"></i> Cali</a></li>
+                        <li><a class="shops__link" href="../pages/shops.html#shop6"><i class="fas fa-map-marker-alt"></i> Cartagena</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="contact col-md m-4">
+            <div class="contact col">
                 <h3 class="contact__title text-center mr-5">Contacto</h3>
                 <div class="contact__container row d-flex justify-content-center">
                     <ul>
-                        <li><a class="contact__link" href="mailto:info@panditasco.com">info@panditasco.com</a></li>
-                        <li><a class="contact__link" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>+57 312 9876543</a></li>
-                        <li><a class="contact__link" href="https://www.facebook.com/PanditasCo" target="_blank">Facebook</a></li>
-                        <li><a class="contact__link" href="https://www.instagram.com/panditasco/?hl=es-la" target="_blank">Instagram</a></li>
+                        <li><a class="contact__link" href="mailto:info@panditasco.com"><i class="fas fa-envelope"></i> info@panditasco.com</a></li>
+                        <li><a class="contact__link" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank><i class="fab fa-whatsapp"></i> +57 312 9876543</a></li>
+                        <li><a class="contact__link" href="https://www.facebook.com/PanditasCo" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+                        <li><a class="contact__link" href="https://www.instagram.com/panditasco/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="menu-footer col-md m-4 d-none d-sm-none d-md-block">
+            <div class="menu-footer col d-none d-sm-none d-md-block">
                 <h3 class="menu-footer__title text-center">Menu</h3>
                 <div class="menu-footer__container row d-flex justify-content-center">    
                     <ul>
@@ -130,5 +163,7 @@
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
+        <!--iconos de fontawesome-->
+        <script src="../js/fontawesome.js"></script>
     </body>
 </html>

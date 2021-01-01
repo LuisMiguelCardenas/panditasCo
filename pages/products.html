@@ -15,38 +15,49 @@
             PanditasCo/Productos
         </title>
     </head>
-    <body>
+    <body class="container">
         <!--Cabecera-->
-        <div class="cabecera row">
-            <div class="cabecera-contact col pl-5">
-                <a class="cabecera-contact__link" href="mailto:info@panditasco.com">info@panditasco.com</a>
-                <a class="cabecera-contact__link ml-2" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>+57 312 9876543</a>
-            </div>
-            <div class="cabecera-networks col text-center">
-                <a class="cabecera-networks__link" href="https://www.facebook.com/PanditasCo" target="_blank">Facebook</a>
-                <a class="cabecera-networks__link ml-2" href="https://www.instagram.com/panditasco/?hl=es-la" target="_blank">Instagram</a>
-            </div>
-        </div>    
-        <header id=header class="row d-flex justify-content-between sticky-top">
-            <!--inicio de la barra de navegación-->      
-            <nav class="navbar navbar-expand-sm navbar-light col">
-            <a class="navbar-brand" href="../index.html">
-                <div class="row m-2 ml-5">
-                    <img class="navbar__logo animate__animated animate__bounce"id="logo" src="../images/logop.png" alt="logo inicio" width="50px" height="50px"/>
-                    <h2 class="navbar__title animate__animated animate__bounce ml-2">PanditasCo</h2>
-                </div>
+        <div class="cabecera bg-dark row d-flex justify-content-around">
+            <a class="cabecera__link row no-gutters" href="mailto:info@panditasco.com">
+                <i class="fas fa-envelope mt-1"></i>
+                <p class="cabecera__text ml-2 d-none d-sm-block d-md-block">info@panditasco.com</p>
+            </a>               
+            <a class="cabecera__link row no-gutters" href="mailto:info@panditasco.com">
+                <i class="fab fa-whatsapp mt-1"></i> 
+                <p class="cabecera__text ml-2 d-none d-sm-block d-md-block">+57 312 9876543</p>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end ml-5 text-center" id="navbarNavDropdown">
-                <ul class="navbar-nav animate__animated animate__backInDown" >
-                    <li class="navbar__button nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li class="navbar__button nav-item active"><a class="nav-link" href="../pages/products.html">Productos</a></li>
-                    <li class="navbar__button nav-item"><a class="nav-link" href="../pages/stories.html">Historias</a></li>
-                    <li class="navbar__button nav-item"><a class="nav-link" href="../pages/shops.html">Tiendas</a></li>
-                    <li class="navbar__button nav-item"><a class="nav-link" href="../pages/contact.html">Contacto</a></li>
-                </ul>
+            <a class="cabecera__link row no-gutters" href="mailto:info@panditasco.com">
+                <i class="fab fa-facebook-square mt-1"></i>
+                <p class="cabecera__text ml-2 d-none d-sm-none d-md-block">Facebook</p>
+            </a>               
+            <a class="cabecera__link row no-gutters" href="mailto:info@panditasco.com">
+                <i class="fab fa-instagram mt-1"></i>
+                <p class="cabecera__text ml-2 d-none d-sm-none d-md-block">Instagram</p>
+            </a>               
+        </div>    
+        <header id=header class="row text-center sticky-top">
+            <!--inicio de la barra de navegación-->      
+            <nav class="navbar navbar-expand-md navbar-light col">
+                <a class="navbar-brand" href="../index.html">
+                    <div class="container text-center d-flex justify-content-center">
+                        <img class="navbar__logo animate__animated animate__bounce" id="logo" src="../images/logop.png" alt="logo inicio" width="50px" height="50px"/>
+                        <h2 class="navbar__title animate__animated animate__bounce">PanditasCo</h2>
+                    </div>
+                </a>
+                <div class="col">
+                    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end ml-5 text-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav animate__animated animate__backInDown" >
+                        <li class="navbar__button nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="navbar__button nav-item active"><a class="nav-link" href="../pages/products.html">Productos</a></li>
+                        <li class="navbar__button nav-item"><a class="nav-link" href="../pages/stories.html">Historias</a></li>
+                        <li class="navbar__button nav-item"><a class="nav-link" href="../pages/shops.html">Tiendas</a></li>
+                        <li class="navbar__button nav-item"><a class="nav-link" href="../pages/contact.html">Contacto</a></li>
+                    </ul>
+                </div>
             </nav>
             <!--fin de la barra de navegación-->
         </header>
@@ -66,31 +77,37 @@
                         <h3 class="galery__title">Bolsita Monstruo</h3>
                         <a href="../images/productos/producto2_1.jpg" data-lightbox="photos"><img class="galery__img" src="../images/productos/producto2_1.jpg" alt="sleepingBag"/></a>
                         <h4 class="galery__text">$75.000</h4>
+                        <a class="buy--button" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>Comprar</a>
                     </div>
                     <div class="galery col">
                         <h3 class="galery__title">Bolsita Monstruo</h3>
                         <a href="../images/productos/producto2_1.jpg" data-lightbox="photos"><img class="galery__img" src="../images/productos/producto2_1.jpg" alt="sleepingBag"/></a>
                         <h4 class="galery__text">$75.000</h4>
+                        <a class="buy--button" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>Comprar</a>
                     </div>
                     <div class="galery col">
                         <h3 class="galery__title">Bolsita Monstruo</h3>
                         <a href="../images/productos/producto2_1.jpg" data-lightbox="photos"><img class="galery__img" src="../images/productos/producto2_1.jpg" alt="sleepingBag"/></a>
                         <h4 class="galery__text">$75.000</h4>
+                        <a class="buy--button" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>Comprar</a>
                     </div>
                     <div class="galery col">
                         <h3 class="galery__title">Bolsita Perrito</h3>
                         <a href="../images/productos/producto2_2.jpeg" data-lightbox="photos"><img class="galery__img" src="../images/productos/producto2_2.jpeg" alt="sleepingBag"/></a>
                         <h4 class="galery__text">$75.000</h4>
+                        <a class="buy--button" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>Comprar</a>
                     </div>
                     <div class="galery col">
                         <h3 class="galery__title">Bolsita Perrito</h3>
                         <a href="../images/productos/producto2_2.jpeg" data-lightbox="photos"><img class="galery__img" src="../images/productos/producto2_2.jpeg" alt="sleepingBag"/></a>
                         <h4 class="galery__text">$75.000</h4>
+                        <a class="buy--button" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>Comprar</a>
                     </div>
                     <div class="galery col">
                         <h3 class="galery__title">Bolsita Perrito</h3>
                         <a href="../images/productos/producto2_2.jpeg" data-lightbox="photos"><img class="galery__img" src="../images/productos/producto2_2.jpeg" alt="sleepingBag"/></a>
                         <h4 class="galery__text">$75.000</h4>
+                        <a class="buy--button" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>Comprar</a>
                     </div>
                 </div>
             </section>
@@ -101,31 +118,37 @@
                         <h3 class="galery__title">Cobija Nube</h3>
                         <a href="../images/productos/producto1_1.jpg" data-lightbox="photos"><img class="galery__img" src="../images/productos/producto1_1.jpg" alt="blanket"/></a>
                         <h4 class="galery__text">$35.000</h4>
+                        <a class="buy--button" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>Comprar</a>
                     </div>
                     <div class="galery col">
                         <h3 class="galery__title">Cobija Nube</h3>
                         <a href="../images/productos/producto1_1.jpg" data-lightbox="photos"><img class="galery__img" src="../images/productos/producto1_1.jpg" alt="blanket"/></a>
                         <h4 class="galery__text">$35.000</h4>
+                        <a class="buy--button" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>Comprar</a>
                     </div>
                     <div class="galery col">
                         <h3 class="galery__title">Cobija Nube</h3>
                         <a href="../images/productos/producto1_1.jpg" data-lightbox="photos"><img class="galery__img" src="../images/productos/producto1_1.jpg" alt="blanket"/></a>
                         <h4 class="galery__text">$35.000</h4>
+                        <a class="buy--button" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>Comprar</a>
                     </div>
                     <div class="galery col">
                         <h3 class="galery__title">Cobija Puercoespín</h3>
                         <a href="../images/productos/producto1_2.jpeg" data-lightbox="photos"><img class="galery__img" src="../images/productos/producto1_2.jpeg" alt="blanket"/></a>
                         <h4 class="galery__text">$35.000</h4>
+                        <a class="buy--button" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>Comprar</a>
                     </div>
                     <div class="galery col">
                         <h3 class="galery__title">Cobija Puercoespín</h3>
                         <a href="../images/productos/producto1_2.jpeg" data-lightbox="photos"><img class="galery__img" src="../images/productos/producto1_2.jpeg" alt="blanket"/></a>
                         <h4 class="galery__text">$35.000</h4>
+                        <a class="buy--button" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>Comprar</a>
                     </div>
                     <div class="galery col">
                         <h3 class="galery__title">Cobija Puercoespín</h3>
                         <a href="../images/productos/producto1_2.jpeg" data-lightbox="photos"><img class="galery__img" src="../images/productos/producto1_2.jpeg" alt="blanket"/></a>
                         <h4 class="galery__text">$35.000</h4>
+                        <a class="buy--button" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>Comprar</a>
                     </div>
                 </div>
             </section>        
@@ -136,61 +159,67 @@
                         <h3 class="galery__title">Pijama Tiburón</h3>
                         <a href="../images/productos/producto3_1.jpg" data-lightbox="photos"><img class="galery__img" src="../images/productos/producto3_1.jpg" alt="pijamas"/></a>
                         <h4 class="galery__text">$85.000</h4>
+                        <a class="buy--button" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>Comprar</a>
                     </div>
                     <div class="galery col">
                         <h3 class="galery__title">Pijama Gatico</h3>
                         <a href="../images/productos/producto3_2.jpeg" data-lightbox="photos"><img class="galery__img" src="../images/productos/producto3_2.jpeg" alt="pijamas"/></a>
                         <h4 class="galery__text">$85.000</h4>
+                        <a class="buy--button" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>Comprar</a>
                     </div>
                     <div class="galery col">
                         <h3 class="galery__title">Pijama Puercoespín</h3>
                         <a href="../images/productos/producto3_3.jpeg" data-lightbox="photos"><img class="galery__img" src="../images/productos/producto3_3.jpeg" alt="pijamas"/></a>
                         <h4 class="galery__text">$85.000</h4>
+                        <a class="buy--button" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>Comprar</a>
                     </div>
                     <div class="galery col">
                         <h3 class="galery__title">Pijama Perrito</h3>
                         <a href="../images/productos/producto3_4.jpeg" data-lightbox="photos"><img class="galery__img" src="../images/productos/producto3_4.jpeg" alt="pijamas"/></a>
                         <h4 class="galery__text">$85.000</h4>
+                        <a class="buy--button" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>Comprar</a>
                     </div>
                     <div class="galery col">
                         <h3 class="galery__title">Pijama Tiburón</h3>
                         <a href="../images/productos/producto3_1.jpg" data-lightbox="photos"><img class="galery__img" src="../images/productos/producto3_1.jpg" alt="pijamas"/></a>
                         <h4 class="galery__text">$85.000</h4>
+                        <a class="buy--button" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>Comprar</a>
                     </div>
                     <div class="galery col">
                         <h3 class="galery__title">Pijama Puercoespín</h3>
                         <a href="../images/productos/producto3_3.jpeg" data-lightbox="photos"><img class="galery__img" src="../images/productos/producto3_3.jpeg" alt="pijamas"/></a>
                         <h4 class="galery__text">$85.000</h4>
+                        <a class="buy--button" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>Comprar</a>
                     </div>
             </section>
         </main> 
         <!--pie de página-->
-        <footer class="row">
-            <div class="shops col-md m-4 d-none d-sm-none d-md-block">
+        <footer class="row p-4">
+            <div class="shops col d-none d-sm-block d-md-block">
                 <h3 class="shops__title text-center ">Tiendas</h3>
                 <div class="shops__container row d-flex justify-content-center">
                     <ul>
-                        <li><a class="shops__link" href="../pages/shops.html#shop1">Bogotá</a></li>
-                        <li><a class="shops__link" href="../pages/shops.html#shop2">Barranquilla</a></li>
-                        <li><a class="shops__link" href="../pages/shops.html#shop3">Bucaramanga</a></li>
-                        <li><a class="shops__link" href="../pages/shops.html#shop4">Medellín</a></li>
-                        <li><a class="shops__link" href="../pages/shops.html#shop5">Cali</a></li>
-                        <li><a class="shops__link" href="../pages/shops.html#shop6">Cartagena</a></li>
+                        <li><a class="shops__link" href="../pages/shops.html#shop1"><i class="fas fa-map-marker-alt"></i> Bogotá</a></li>
+                        <li><a class="shops__link" href="../pages/shops.html#shop2"><i class="fas fa-map-marker-alt"></i> Barranquilla</a></li>
+                        <li><a class="shops__link" href="../pages/shops.html#shop3"><i class="fas fa-map-marker-alt"></i> Bucaramanga</a></li>
+                        <li><a class="shops__link" href="../pages/shops.html#shop4"><i class="fas fa-map-marker-alt"></i> Medellín</a></li>
+                        <li><a class="shops__link" href="../pages/shops.html#shop5"><i class="fas fa-map-marker-alt"></i> Cali</a></li>
+                        <li><a class="shops__link" href="../pages/shops.html#shop6"><i class="fas fa-map-marker-alt"></i> Cartagena</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="contact col-md m-4">
+            <div class="contact col">
                 <h3 class="contact__title text-center mr-5">Contacto</h3>
                 <div class="contact__container row d-flex justify-content-center">
                     <ul>
-                        <li><a class="contact__link" href="mailto:info@panditasco.com">info@panditasco.com</a></li>
-                        <li><a class="contact__link" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank>+57 312 9876543</a></li>
-                        <li><a class="contact__link" href="https://www.facebook.com/PanditasCo" target="_blank">Facebook</a></li>
-                        <li><a class="contact__link" href="https://www.instagram.com/panditasco/?hl=es-la" target="_blank">Instagram</a></li>
+                        <li><a class="contact__link" href="mailto:info@panditasco.com"><i class="fas fa-envelope"></i> info@panditasco.com</a></li>
+                        <li><a class="contact__link" href="https://api.whatsapp.com/send?phone=+573129876543"target=blank><i class="fab fa-whatsapp"></i> +57 312 9876543</a></li>
+                        <li><a class="contact__link" href="https://www.facebook.com/PanditasCo" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+                        <li><a class="contact__link" href="https://www.instagram.com/panditasco/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="menu-footer col-md m-4 d-none d-sm-none d-md-block">
+            <div class="menu-footer col d-none d-sm-none d-md-block">
                 <h3 class="menu-footer__title text-center">Menu</h3>
                 <div class="menu-footer__container row d-flex justify-content-center">    
                     <ul>
@@ -214,5 +243,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+        <!--iconos de fontawesome-->
+        <script src="../js/fontawesome.js"></script>
     </body>
 </html>
