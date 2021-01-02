@@ -58,15 +58,16 @@ footer {
       text-decoration: none;
       color: #f39316; }
 
-.carousel__title {
-  color: #f39316;
-  font-weight: 900;
-  font-size: 30px; }
-
-.carroulser__text {
-  color: #f39316;
-  font-weight: 900;
-  font-size: 20px; }
+.carousel-caption {
+  background-color: #27272767; }
+  .carousel-caption .carousel__title {
+    color: #fdfdfd;
+    font-weight: 900;
+    font-size: 30px; }
+  .carousel-caption .carroulser__text {
+    color: #fdfdfd;
+    font-weight: 900;
+    font-size: 20px; }
 
 .welcome__title, .mian-products__title {
   color: #272727;

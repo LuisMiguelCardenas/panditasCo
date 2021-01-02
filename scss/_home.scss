@@ -1,14 +1,19 @@
 // Carousel
 
-.carousel__title{
-    color: $colorThree;
-    font-weight: 900;
-    font-size: 30px;
-}
-.carroulser__text{
-    color: $colorThree;
-    font-weight: 900;
-    font-size: 20px;
+
+.carousel-caption{
+    background-color: $colorEight;
+
+    .carousel__title{
+        color: $colorOne;
+        font-weight: 900;
+        font-size: 30px;
+    }
+    .carroulser__text{
+        color: $colorOne;
+        font-weight: 900;
+        font-size: 20px;
+    }
 }
 
 //Binevenida
