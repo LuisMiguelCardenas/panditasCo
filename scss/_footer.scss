@@ -1,42 +1,41 @@
 footer{
     background-color: $colorTwo;
+    border-top: solid 1px $colorOne;
     color: $colorOne;
     font-family: $fontOne;
-    border-top: solid 1px $colorOne;
     .shops{
         .shops__title{
-            font-size: 30px;
+            font-size: $sizeOne;
+            font-weight: 900;
         }    
         .shops__container{
             ul{
                 li{
-                    text-decoration: none;
                     list-style: none;
-                    
+                    text-decoration: none;
                     .shops__link{
                         color:$colorOne;
-                        font-size: $sizeOne;
+                        font-size: $sizeFive;
                         &:hover{
                             color: $colorThree;}    
                     }                                
                 }
             }
         }
-
     }
     .contact{
         .contact__title{
-            font-size: 30px;
+            font-size: $sizeOne;
+            font-weight: 900;
         }    
         .contact__container{
             ul{
                 li{
-                    text-decoration: none;
                     list-style: none;
-                    
+                    text-decoration: none;
                     .contact__link{
                         color:$colorOne;
-                        font-size: $sizeOne;
+                        font-size: $sizeFive;
                         &:hover{
                             color: $colorThree;}     
                     }                                
@@ -47,17 +46,17 @@ footer{
     }
     .menu-footer{
         .menu-footer__title{
-            font-size: 30px;
+            font-size: $sizeOne;
+            font-weight: 900;
         }    
         .menu-footer__container{
             ul{
                 li{
-                    text-decoration: none;
                     list-style: none;
-                    
+                    text-decoration: none;
                     .menu-footer__link{
                         color:$colorOne;
-                        font-size: $sizeOne;
+                        font-size: $sizeFive;
                         &:hover{
                             color: $colorThree;}     
                     }                                
@@ -65,5 +64,20 @@ footer{
             }
         }
 
+    }
+    .envios{
+        color:$colorOne;
+        font-size: $sizeOne;
+    }
+    .rights{
+        border-top: 1px $colorOne solid;
+        .rights__text{
+            color: $colorOne;
+            font-size: $sizeFive;
+        }
+    .logoSlam{
+        height: 32px;
+        width: 32px;
+        }
     }
 }

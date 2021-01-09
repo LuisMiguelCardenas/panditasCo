@@ -6,13 +6,13 @@
 
     .carousel__title{
         color: $colorOne;
-        font-weight: 900;
         font-size: 30px;
+        font-weight: 900;
     }
     .carroulser__text{
         color: $colorOne;
-        font-weight: 900;
         font-size: 20px;
+        font-weight: 900;
     }
 }
 
@@ -21,8 +21,8 @@
 .welcome__title{
     color: $colorTwo;
     font-size: $sizeFour;
-    margin-top: 60px;
     margin-bottom: 30px;
+    margin-top: 60px;
 }
 
 .welcome__text{
@@ -35,16 +35,16 @@
 
 .main-index{
     .main__title{
+        font-family: $fontTwo;
         font-size: $sizeTwo;
         text-decoration: underline;
-        font-family: $fontTwo;
     }
 }
 
 .sleeping-bag__img{
-    width: 130px;
     height: 120px;
     margin: 20px;
+    width: 130px;
 }
 
 .blanket__img{
@@ -67,12 +67,11 @@
             text-decoration: underline;
         }
         .cardeOne__text{
-            font-size: $sizeOne;
             font-family: $fontThree;
+            font-size: $sizeOne;
         }
         .cardOne__img{
-            width: 90%;
-            height: auto;
+            width: 100%;
         }
     }
 
@@ -86,12 +85,11 @@
             text-decoration: underline;
         }
         .cardeTwo__text{
-            font-size: $sizeOne;
             font-family: $fontThree;
+            font-size: $sizeOne;
         }
         .cardTwo__img{
             width: 90%;
-            height: auto;
         }
     }
 

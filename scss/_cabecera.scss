@@ -4,8 +4,8 @@
     .cabecera__link{
         color: $colorOne;
         &:hover{
-            text-decoration: none;
             color: $colorThree;
+            text-decoration: none;  
         }
     }
 }

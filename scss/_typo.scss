@@ -8,8 +8,8 @@ body{
 }
 
 a:hover{
-    text-decoration: none;
     color: $colorThree;
+    text-decoration: none;
 }
 
 //seccion de productos//
@@ -46,13 +46,13 @@ a:hover{
 }    
 
 .sleepingBag__title{
-    font-size: $sizeTwo;
-    text-decoration: underline;
     border-bottom: 2px solid $colorTwo;
+    font-size: $sizeTwo;
     margin-bottom: 20px;
+    margin-top: -170px;
     padding-bottom: 20px;
     padding-top: 170px;
-    margin-top: -170px;
+    text-decoration: underline;
 }
 
 .blanket__title{
@@ -64,19 +64,19 @@ a:hover{
 }
 
 .galery{
-    font-size: $sizeOne;
-    font-family: $fontOne;
-    width: 300px;
-    margin: 40px;
     border-radius: 30px;
+    font-family: $fontOne;
+    font-size: $sizeOne;
+    margin: 40px;
+    width: 300px;
 
     .galery__text{
         color: $colorTwo;
     }
     
     .galery__img{
-        width: 200px;
         height: 250px;
+        width: 200px;
         &:hover{
             border: rgba(133, 133, 133, 0.384) 5px solid;
             transform: scale(1.05,1.05);
@@ -88,11 +88,11 @@ a:hover{
 //Página de historias
 
 .mainStories__title{
-    font-size: $sizeTwo;
-    text-decoration: underline;
     border-bottom: 2px solid $colorTwo;
+    font-size: $sizeTwo;
     margin-bottom: 20px;
     padding-bottom: 20px;
+    text-decoration: underline;
 }
 
 .mainStories__text{
@@ -115,19 +115,19 @@ a:hover{
     background: linear-gradient($colorOne, $colorFour);
 }
 .storyOne__title{
-    font-size: $sizeTwo;
-    font-family: $fontTwo;
     border-bottom: 2px solid $colorTwo;
+    font-family: $fontTwo;
+    font-size: $sizeTwo;
 }
 
 .storyOne__text{
-    font-size: $sizeOne;
     font-family: $fontThree;
+    font-size: $sizeOne;
 }
 
 .storyOne__img{
-    width: 100%;
     height: auto;
+    width: 100%;
 }
 .storyTwo__title{
     @extend .storyOne__title;
@@ -137,8 +137,8 @@ a:hover{
     @extend .storyOne__text;
 }
 .storyTwo__img{
-    width: 100%;
     height: auto;
+    width: 100%;
 }
 
 .yourStories{
@@ -178,21 +178,21 @@ a:hover{
 .shop5__title,
 .shop6__title{
     font-size: $sizeTwo;
+    margin-top: -170px;
     padding-bottom: 20px;
     padding-top: 170px;
-    margin-top: -170px;
 }
 
 .shop__text{
-    font-size: $sizeOne;
     color: $colorTwo;
+    font-size: $sizeOne;
     margin: 20px;
 }
 //Página de contacto//
 
 #mainContact{
-    font-size: $sizeOne;
     font-family: $fontOne;
+    font-size: $sizeOne;
 }
 
 .contacto__title{
@@ -207,30 +207,30 @@ $redes: "facebook", "whatsapp", "instagram", "mail";
 }
 
 .red__facebook {
-    height: 30px;
-    width: 30px;
     background-size:30px 30px;
+    height: 30px;
     margin: 10px;
+    width: 30px;
 }
 
 .red__instagram {
-    height: 30px;
-    width: 30px;
     background-size:30px 30px;
+    height: 30px;
     margin: 10px;
+    width: 30px;
 }
 .red__whatsapp {
-    height: 30px;
-    width: 30px;
     background-size:30px 30px;
+    height: 30px;
     margin: 10px;
+    width: 30px;
    
 }
 .red__mail {
+    background-size:30px 30px;
     height: 30px;
+    margin: 10px;
     width: 30px;
-    background-size:30px 30px ;
-    margin: 10px; 
 }
 .red__mail--link{
     color: rgba(128, 255, 0, 0);
