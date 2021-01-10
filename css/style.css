@@ -43,7 +43,7 @@ footer {
     border-top: 1px #fdfdfd solid; }
     footer .rights .rights__text {
       color: #fdfdfd;
-      font-size: 16px; }
+      font-size: 14px; }
     footer .rights .logoSlam {
       height: 32px;
       width: 32px; }
@@ -109,9 +109,9 @@ footer {
   .cardOne .cardOne__title {
     color: #fdfdfd;
     font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 900;
     font-size: 23px;
-    margin: 20px;
-    text-decoration: underline; }
+    margin: 20px; }
   .cardOne .cardeOne__text {
     font-family: serif;
     font-size: 18px; }
@@ -124,8 +124,8 @@ footer {
     color: #fdfdfd;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 23px;
-    margin: 20px;
-    text-decoration: underline; }
+    font-weight: 900;
+    margin: 20px; }
   .cardTwo .cardeTwo__text {
     font-family: serif;
     font-size: 18px; }
@@ -177,11 +177,14 @@ a:hover {
   width: 300px; }
   .galery .galery__text {
     color: #272727; }
+  .galery .galery__text--tallas {
+    color: #272727;
+    font-size: 16px;
+    margin-bottom: 20px; }
   .galery .galery__img {
-    height: 250px;
-    width: 200px; }
+    max-height: 250px;
+    max-width: 200px; }
     .galery .galery__img:hover {
-      border: rgba(133, 133, 133, 0.384) 5px solid;
       transform: scale(1.05, 1.05);
       transition: 0.5s; }
 
@@ -218,8 +221,8 @@ a:hover {
   width: 100%; }
 
 .storyTwo__img {
-  height: auto;
-  width: 100%; }
+  max-height: 400px;
+  max-width: 450px; }
 
 .yourStories {
   border: solid 2px #272727; }

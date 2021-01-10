@@ -62,9 +62,9 @@
         .cardOne__title{
             color: $colorOne;
             font-family: $fontOne;
+            font-weight: 900;
             font-size: $sizeThree;
             margin: 20px;
-            text-decoration: underline;
         }
         .cardeOne__text{
             font-family: $fontThree;
@@ -81,8 +81,8 @@
             color: $colorOne;
             font-family: $fontOne;
             font-size: $sizeThree;
+            font-weight: 900;
             margin: 20px;
-            text-decoration: underline;
         }
         .cardeTwo__text{
             font-family: $fontThree;
